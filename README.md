@@ -260,11 +260,8 @@ ollama run hf.co/Automate-with-Sanjay/Liar-1-GGUF
 
 ---
 
-## 🛡️ Pre-Push & Security Verification
+## 🛡️ Compliance and Reproducibility
 
-Before publishing to GitHub, this repository was subjected to automated verification:
-- [x] **No Secrets / Credentials**: Scanned for Hugging Face tokens, OpenAI keys, W&B tokens, AWS keys, and private credentials.
-- [x] **No PII**: Checked datasets for email addresses, phone numbers, and identifying personal data.
 - [x] **Git LFS / 100MB File Size Compliance**: Binary model weights (`model.gguf`, ~808MB) are excluded via `.gitignore` to prevent GitHub push rejections. Model weights are hosted on [Hugging Face](https://huggingface.co/Automate-with-Sanjay/Liar-1-GGUF).
 - [x] **Reproducibility**: Environment pinned via `requirements.txt`.
 
