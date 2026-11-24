@@ -1,0 +1,70 @@
+# ==========================================
+# Git Ignore for Liar1_FT (LLM Fine-Tuning)
+# ==========================================
+
+# Large Model Binaries & Weights (>100MB exceeds GitHub limits)
+*.gguf
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.onnx
+*.h5
+
+# Fine-Tuned Model Weights & Checkpoints
+llama-liar-checkpoints/
+llama-liar-improved-checkpoints/
+llama-liar-lora/
+llama-liar-improved-lora/
+llama-liar-gguf/
+llama-liar-improved-gguf/
+checkpoint-*/
+Fine_Tuned_Model/**/model.gguf
+
+# Python & Jupyter Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+.pytest_cache/
+
+# Environments & Dependencies
+.env
+.env.*
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Secrets, Logs & Monitoring
+*.log
+*.secret
+*.token
+*.key
+wandb/
+.wandb/
+
+# OS Specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Model Upload - HF
+HF_Upload.py
